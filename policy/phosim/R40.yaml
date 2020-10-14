@@ -4,12 +4,10 @@ R40 :
 
   ccdSerials :
     S01 : ITL-3800C-422-Dev
-    S02 : ITL-3800C-441-Dev
     S12 : ITL-3800C-418-Dev
 
   sensorTypes :
     S01 : 2
-    S02 : 3
     S12 : 2
 
   amplifiers :
@@ -30,23 +28,6 @@ R40 :
       C02 : { gain : 1.785, readNoise : 3.92 }
       C01 : { gain : 1.647, readNoise : 4.35 }
       C00 : { gain : 1.690, readNoise : 4.21 }
-    S02 :
-      C10 : { gain : 1.694, readNoise : 4.04 }
-      C11 : { gain : 1.779, readNoise : 3.85 }
-      C12 : { gain : 1.712, readNoise : 4.25 }
-      C13 : { gain : 1.630, readNoise : 4.37 }
-      C14 : { gain : 1.716, readNoise : 4.24 }
-      C15 : { gain : 1.607, readNoise : 4.21 }
-      C16 : { gain : 1.726, readNoise : 3.90 }
-      C17 : { gain : 1.700, readNoise : 4.06 }
-      C07 : { gain : 1.645, readNoise : 3.97 }
-      C06 : { gain : 1.771, readNoise : 4.11 }
-      C05 : { gain : 1.695, readNoise : 4.23 }
-      C04 : { gain : 1.719, readNoise : 3.91 }
-      C03 : { gain : 1.620, readNoise : 4.22 }
-      C02 : { gain : 1.734, readNoise : 4.09 }
-      C01 : { gain : 1.626, readNoise : 4.26 }
-      C00 : { gain : 1.663, readNoise : 4.09 }
     S12 :
       C10 : { gain : 1.629, readNoise : 4.21 }
       C11 : { gain : 1.796, readNoise : 3.86 }

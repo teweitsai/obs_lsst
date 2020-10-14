@@ -3,33 +3,14 @@ R44 :
   raftSerial : LCA-11021_RTM-024
 
   ccdSerials :
-    S00 : ITL-3800C-545-Dev
     S01 : ITL-3800C-522-Dev
     S10 : ITL-3800C-500-Dev
 
   sensorTypes :
-    S00 : 3
     S01 : 2
     S10 : 2
 
   amplifiers :
-    S00 :
-      C10 : { gain : 1.725, readNoise : 3.97 }
-      C11 : { gain : 1.675, readNoise : 4.16 }
-      C12 : { gain : 1.619, readNoise : 4.25 }
-      C13 : { gain : 1.748, readNoise : 3.97 }
-      C14 : { gain : 1.586, readNoise : 4.22 }
-      C15 : { gain : 1.604, readNoise : 4.46 }
-      C16 : { gain : 1.761, readNoise : 4.05 }
-      C17 : { gain : 1.712, readNoise : 4.06 }
-      C07 : { gain : 1.742, readNoise : 3.96 }
-      C06 : { gain : 1.801, readNoise : 3.79 }
-      C05 : { gain : 1.723, readNoise : 3.99 }
-      C04 : { gain : 1.661, readNoise : 4.12 }
-      C03 : { gain : 1.714, readNoise : 3.85 }
-      C02 : { gain : 1.594, readNoise : 4.35 }
-      C01 : { gain : 1.775, readNoise : 3.84 }
-      C00 : { gain : 1.705, readNoise : 4.07 }
     S01 :
       C10 : { gain : 1.795, readNoise : 4.02 }
       C11 : { gain : 1.554, readNoise : 4.34 }

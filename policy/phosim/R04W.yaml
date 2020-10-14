@@ -1,0 +1,31 @@
+R04 :
+  detectorType : ITL_WF
+  raftSerial : LCA-11021_RTM-023
+
+  ccdSerials :
+    SW0 : ITL-3800C-302-Dev
+    SW1 : ITL-3800C-302-Dev
+
+  sensorTypes :
+    SW0 : 3
+    SW1 : 3
+
+  amplifiers :
+    SW0 :
+      C10 : { gain : 1.639, readNoise : 4.18 }
+      C11 : { gain : 1.717, readNoise : 4.05 }
+      C12 : { gain : 1.726, readNoise : 4.01 }
+      C13 : { gain : 1.705, readNoise : 4.20 }
+      C14 : { gain : 1.683, readNoise : 4.18 }
+      C15 : { gain : 1.647, readNoise : 4.20 }
+      C16 : { gain : 1.738, readNoise : 4.18 }
+      C17 : { gain : 1.694, readNoise : 4.25 }
+    SW1 :
+      C10 : { gain : 1.773, readNoise : 3.87 }
+      C11 : { gain : 1.754, readNoise : 3.94 }
+      C12 : { gain : 1.751, readNoise : 3.77 }
+      C13 : { gain : 1.647, readNoise : 4.22 }
+      C14 : { gain : 1.667, readNoise : 4.50 }
+      C15 : { gain : 1.674, readNoise : 4.07 }
+      C16 : { gain : 1.671, readNoise : 4.20 }
+      C17 : { gain : 1.740, readNoise : 4.10 }
