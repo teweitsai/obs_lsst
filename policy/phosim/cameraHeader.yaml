@@ -250,6 +250,52 @@ CCD_ITL : &CCD_ITL
         <<: *C07_ITL
         hdu : 16
         ixy : [0, 1]
+
+#
+# Wavefront sensors.
+#
+CCD_ITL_WF : &CCD_ITL_WF
+    <<: *CCD_ITL
+    detectorType : 0
+    refpos : [2036.5, 1000.5]
+    # This is the orientation we need to put the serial direction along the x-axis
+    bbox : [[0, 0], [4071, 1999]]
+
+    amplifiers:
+      C10: &C10_ITL_WF
+        <<: *AMP_ITL
+        hdu : 1
+        flipXY : [True, True]
+        ixy : [7, 0]
+      C11: &C11_ITL_WF
+        <<: *C10_ITL_WF
+        hdu : 2
+        ixy : [6, 0]
+      C12: &C12_ITL_WF
+        <<: *C10_ITL_WF
+        hdu : 3
+        ixy : [5, 0]
+      C13: &C13_ITL_WF
+        <<: *C10_ITL_WF
+        hdu : 4
+        ixy : [4, 0]
+      C14: &C14_ITL_WF
+        <<: *C10_ITL_WF
+        hdu : 4
+        ixy : [3, 0]
+      C15: &C15_ITL_WF
+        <<: *C10_ITL_WF
+        hdu : 6
+        ixy : [2, 0]
+      C16: &C16_ITL_WF
+        <<: *C10_ITL_WF
+        hdu : 7
+        ixy : [1, 0]
+      C17: &C17_ITL_WF
+        <<: *C10_ITL_WF
+        hdu : 8
+        ixy : [0, 0]
+
 #
 # Layout of CCDs within an ITL raft
 #
@@ -298,6 +344,22 @@ RAFT_ITL:
       << : *S00_ITL
       id : 8
       offset : [ 42.36,  42.20]
+
+#
+# Layout of wavefront sensors in a corner raft.
+#
+RAFT_ITL_WF:
+  ccds :
+    SW0: &SW0_ITL_WF               # corresponds to lower half of SR slot 00
+      << : *CCD_ITL_WF
+      id : 0
+      offset : [-42.25, -52.8125]
+
+    SW1: &SW1_ITL_WF               # corresponds to upper half of SR slot 00
+      << : *SW0_ITL_WF
+      id : 1
+      offset : [-42.25, -31.6875]
+
 #
 # Layout of CCDs within an E2V raft
 #
